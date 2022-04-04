@@ -6,13 +6,13 @@ categories:
 tags:
   - cybersecurity
   - writeup
+
+metasploit: assets/images/msf.jpg
 ---
 
----
+# RP Metasploit TryHackMe
 
-# RP Metasploit | TryHackMe
-
-![metasploit](assets/images/msf.jpg)
+![metasploit]({{ page.metasploit | relative_url }})
 
 Learn to use Metasploit, a tool to probe and exploit vulnerabilities on networks and servers.
 
