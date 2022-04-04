@@ -1,5 +1,5 @@
 ---
-title: "RP Metasploit | TryHackMe"
+title: "RP Metasploit TryHackMe"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
@@ -7,10 +7,16 @@ tags:
   - cybersecurity
   - writeup
 
-metasploit: assets/images/msf.jpg
+metasploit: assets/images/metasploit/msf.jpg
+rapid7: assets/images/metasploit/rapid7.png
+msfdbinit: assets/images/metasploit/msfdbinit.png
+msfconsole-h: assets/images/metasploit/msfconsole-h.png
+msfconsole-q: assets/images/metasploit/msfconsole-q.png
+msfconsole: assets/images/metasploit/msfconsole.png
+db_status: assets/images/metasploit/db_status.png
 ---
 
-# RP Metasploit TryHackMe
+# Metasploit
 
 ![metasploit]({{ page.metasploit | relative_url }})
 
@@ -20,7 +26,7 @@ Learn to use Metasploit, a tool to probe and exploit vulnerabilities on networks
 
 Kali and most other security distributions of Linux include Metasploit by default. If you are using a different distribution of Linux, verify that you have it installed or install it from the Rapid 7 Github repository.
 
-![rapid7](assets/images/metasploit/rapid7.png)
+![rapid7]({{ page.rapid7 | relative_url }})
 
 ## Task 2 Initializing…
 
@@ -28,31 +34,31 @@ Kali and most other security distributions of Linux include Metasploit by defaul
 
    - `msfdb init`
 
-![msfdbinit](assets/images/metasploit/msfdbinit.png)
+![msfdbinit]({{ page.msfdbinit | relative_url }})
 
 2. Before starting 'Metasploit', we can view some of the advanced options we can trigger for starting the console. Check these out now by using the command:
 
    - `msfconsole -h`
 
-![msfconsole-h](assets/images/metasploit/msfconsole-h.png)
+![msfconsole-h]({{ page.msfconsole-h | relative_url }})
 
 3. We can start the Metasploit console on the command line without showing the banner or any startup information as well. What switch do we add to msfconsole to start it without showing this information? This will include the '-'
 
    - `-q`
 
-![msfconsole-q](assets/images/metasploit/msfconsole-q.png)
+![msfconsole-q]({{ page.msfconsole-q | relative_url }})
 
 4. Once the database is initialized, go ahead and start Metasploit via the command:
 
    - `msfconsole`
 
-![msfconsole](assets/images/metasploit/msfconsole.png)
+![msfconsole]({{ page.msfconsole | relative_url }})
 
 5. After Metasploit has started, let's go ahead and check that we've connected to the database. Do this now with the command:
 
    - `db_status`
 
-![dbstatus](assets/images/metasploit/db_status.png)
+![db_status]({{ page.db_status | relative_url }})
 
 6. Cool! We've connected to the database, which type of database does Metasploit 5 use?
 
