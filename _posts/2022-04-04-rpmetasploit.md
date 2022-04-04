@@ -2,7 +2,7 @@
 title: "RP Metasploit TryHackMe"
 date: 2019-04-18T15:34:30-04:00
 categories:
-  - blog
+  - Blog
 tags:
   - cybersecurity
   - writeup
@@ -14,6 +14,19 @@ msfconsole-h: assets/images/metasploit/msfconsole-h.png
 msfconsole-q: assets/images/metasploit/msfconsole-q.png
 msfconsole: assets/images/metasploit/msfconsole.png
 db_status: assets/images/metasploit/db_status.png
+help: assets/images/metasploit/help.png
+alias: assets/images/metasploit/alias.png
+search: assets/images/metasploit/search.png
+use: assets/images/metasploit/use.png
+info: assets/images/metasploit/info.png
+connect: assets/images/metasploit/connect.png
+banner: assets/images/metasploit/banner.png
+set: assets/images/metasploit/set.png
+setg: assets/images/metasploit/setg.png
+get: assets/images/metasploit/get.png
+unset: assets/images/metasploit/unset.png
+spool: assets/images/metasploit/spool.png
+save: assets/images/metasploit/save.png
 ---
 
 # Metasploit
@@ -74,79 +87,79 @@ Let's go ahead and start exploring the help menu. On the Metasploit prompt (wher
 
 - `help`
 
-![help](assets/images/metasploit/help.png)
+![help]({{ page.help | relative_url }})
 
 The help menu has a very short one-character alias, what is it?
 
 - `?`
 
-![?](assets/images/metasploit/alias.png)
+![alias]({{ page.alias | relative_url }})
 
 Finding various modules we have at our disposal within Metasploit is one of the most common commands we will leverage in the framework. What is the base command we use for searching?
 
 - `search`
 
-![search](assets/images/metasploit/search.png)
+![search]({{ page.search | relative_url }})
 
 Once we've found the module we want to leverage, what command we use to select it as the active module?
 
 - `use`
 
-![use](assets/images/metasploit/use.png)
+![use]({{ page.use | relative_url }})
 
 How about if we want to view information about either a specific module or just the active one we have selected?
 
 - `info`
 
-![info](assets/images/metasploit/info.png)
+![info]({{ page.use | relative_url }})
 
 Metasploit has a built-in netcat-like function where we can make a quick connection with a host simply to verify that we can 'talk' to it. What command is this?
 
 - `connect`
 
-![connect](assets/images/metasploit/connect.png)
+![connect]({{ page.use | relative_url }})
 
 Entirely one of the commands purely utilized for fun, what command displays the motd/ascii art we see when we start msfconsole (without -q flag)?
 
 - `banner`
 
-![banner](assets/images/metasploit/banner.png)
+![banner]({{ page.banner | relative_url }})
 
 We'll revisit these next two commands shortly, however, they're two of the most used commands within Metasploit. First, what command do we use to change the value of a variable?
 
 - `set`
 
-![set](assets/images/metasploit/set.png)
+![set]({{ page.set | relative_url }})
 
 Metasploit supports the use of global variables, something which is incredibly useful when you're specifically focusing on a single box. What command changes the value of a variable globally?
 
 - `setg`
 
-![setg](assets/images/metasploit/setg.png)
+![setg]({{ page.setg | relative_url }})
 
 Now that we've learned how to change the value of variables, how do we view them? There are technically several answers to this question, however, I'm looking for a specific three-letter command which is used to view the value of single variables.
 
 - `get`
 
-![get](assets/images/metasploit/get.png)
+![get]({{ page.get | relative_url }})
 
 How about changing the value of a variable to null/no value?
 
 - `unset`
 
-![unset](assets/images/metasploit/unset.png)
+![unset]({{ page.unset | relative_url }})
 
 When performing a penetration test it's quite common to record your screen either for further review or for providing evidence of any actions taken. This is often coupled with the collection of console output to a file as it can be incredibly useful to grep for different pieces of information output to the screen. What command can we use to set our console output to save to a file?
 
 - `spool`
 
-![spool](assets/images/metasploit/spool.png)
+![spool]({{ page.spool | relative_url }})
 
 Leaving a Metasploit console running isn't always convenient and it can be helpful to have all of our previously set values load when starting up Metasploit. What command can we use to store the settings/active datastores from Metasploit to a settings file? This will save within your msf4 (or msf5) directory and can be undone easily by simply removing the created settings file.
 
 - `save`
 
-![save](assets/images/metasploit/save.png)
+![save]({{ page.save | relative_url }})
 
 ## Task 4 Modules For Every Occasion!
 
