@@ -27,6 +27,7 @@ get: assets/images/metasploit/get.png
 unset: assets/images/metasploit/unset.png
 spool: assets/images/metasploit/spool.png
 save: assets/images/metasploit/save.png
+framework: assets/images/metasploit/framework.png
 ---
 
 # Metasploit
@@ -43,39 +44,39 @@ Kali and most other security distributions of Linux include Metasploit by defaul
 
 ## Task 2 Initializing…
 
-1. First things first, we need to initialize the database! Let's do that now with the command
+First things first, we need to initialize the database! Let's do that now with the command
 
-   - `msfdb init`
+- `msfdb init`
 
 ![msfdbinit]({{ page.msfdbinit | relative_url }})
 
-2. Before starting 'Metasploit', we can view some of the advanced options we can trigger for starting the console. Check these out now by using the command:
+Before starting 'Metasploit', we can view some of the advanced options we can trigger for starting the console. Check these out now by using the command:
 
-   - `msfconsole -h`
+- `msfconsole -h`
 
 ![msfconsole-h]({{ page.msfconsole-h | relative_url }})
 
-3. We can start the Metasploit console on the command line without showing the banner or any startup information as well. What switch do we add to msfconsole to start it without showing this information? This will include the '-'
+We can start the Metasploit console on the command line without showing the banner or any startup information as well. What switch do we add to msfconsole to start it without showing this information? This will include the '-'
 
-   - `-q`
+- `-q`
 
 ![msfconsole-q]({{ page.msfconsole-q | relative_url }})
 
-4. Once the database is initialized, go ahead and start Metasploit via the command:
+Once the database is initialized, go ahead and start Metasploit via the command:
 
-   - `msfconsole`
+- `msfconsole`
 
 ![msfconsole]({{ page.msfconsole | relative_url }})
 
-5. After Metasploit has started, let's go ahead and check that we've connected to the database. Do this now with the command:
+After Metasploit has started, let's go ahead and check that we've connected to the database. Do this now with the command:
 
-   - `db_status`
+- `db_status`
 
 ![db_status]({{ page.db_status | relative_url }})
 
-6. Cool! We've connected to the database, which type of database does Metasploit 5 use?
+Cool! We've connected to the database, which type of database does Metasploit 5 use?
 
-   - `postgresql`
+- `postgresql`
 
 ## Task 3 Rock'em To The Core
 
@@ -165,7 +166,7 @@ Leaving a Metasploit console running isn't always convenient and it can be helpf
 
 Metasploit consists of six core modules that make up the bulk of the tools you will utilize within it. Let's take a quick look through the various modules, their purposes, and some of the commands associated with modules.
 
-![framework](assets/images/metasploit/framework.png)
+![framework]({{ page.framework | relative_url }})
 
 *Note, this diagram includes both the interfaces and *most\* of the modules. This diagram does not include the 'Post' module.
 
