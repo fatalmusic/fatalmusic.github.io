@@ -12,7 +12,7 @@ tags:
 
 # RP Metasploit | TryHackMe
 
-![Metasploit](assets/images/metasploit/msf.jpg)
+![metasploit](assets/images/msf.jpg)
 
 Learn to use Metasploit, a tool to probe and exploit vulnerabilities on networks and servers.
 
