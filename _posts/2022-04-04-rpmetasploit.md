@@ -28,6 +28,24 @@ unset: assets/images/metasploit/unset.png
 spool: assets/images/metasploit/spool.png
 save: assets/images/metasploit/save.png
 framework: assets/images/metasploit/framework.png
+db_nmap: assets/images/metasploit/db_nmap-sV10.10.199.128.png
+msrpc: assets/images/metasploit/msrpc.png
+hosts: assets/images/metasploit/hosts.png
+services: assets/images/metasploit/services.png
+vulns: assets/images/metasploit/vulns.png
+useicecast: assets/images/metasploit/useicecast.png
+exploit: assets/images/metasploit/exploit.png
+searchmultihandler: assets/images/metasploit/searchmultihandler.png
+use5: assets/images/metasploit/use5.png
+showoptions: assets/images/metasploit/showoptions.png
+setRHOST: assets/images/metasploit/setRHOST.png
+session-i1: assets/images/metasploit/session-i1.png
+spoof: assets/images/metasploit/spoof.png
+getuid: assets/images/metasploit/getuid.png
+sysinfo: assets/images/metasploit/sysinfo.png
+getprivs: assets/images/metasploit/getprivs.png
+postwindowsgathercheckvm: assets/images/metasploit/postwindowsgathercheckvm.png
+shell: assets/images/metasploit/shell.png
 ---
 
 # Metasploit
@@ -112,13 +130,13 @@ How about if we want to view information about either a specific module or just 
 
 - `info`
 
-![info]({{ page.use | relative_url }})
+![info]({{ page.info | relative_url }})
 
 Metasploit has a built-in netcat-like function where we can make a quick connection with a host simply to verify that we can 'talk' to it. What command is this?
 
 - `connect`
 
-![connect]({{ page.use | relative_url }})
+![connect]({{ page.connect | relative_url }})
 
 Entirely one of the commands purely utilized for fun, what command displays the motd/ascii art we see when we start msfconsole (without -q flag)?
 
@@ -212,9 +230,13 @@ Metasploit comes with a built-in way to run nmap and feed it's results directly 
 
 - `db_nmap -sV 10.10.199.128`
 
+![db_nmap]({{ page.db_nmap | relative_url }})
+
 What service does nmap identify running on port 135?
 
 - `msrpc`
+
+![msrpc]({{ page.msrpc | relative_url }})
 
 Let's go ahead and see what information we have collected in the database.
 
@@ -222,9 +244,13 @@ Try typing the command hosts into the msfconsole now.
 
 - `hosts`
 
+![hosts]({{ page.hosts | relative_url }})
+
 How about something else from the database, try the command services now.
 
 - `services`
+
+![services]({{ page.services | relative_url }})
 
 One last thing, try the command vulns now. This won't show much at the current moment, however, it's worth noting that Metasploit will keep track of discovered vulnerabilities.
 
@@ -232,11 +258,15 @@ One of the many ways the database can be leveraged quickly and powerfully.
 
 - `vulns`
 
+![vulns]({{ page.vulns | relative_url }})
+
 Now that we've scanned our victim system, let's try connecting to it with a Metasploit payload. First, we'll have to search for the target payload.
 
 In Metasploit 5 (the most recent version at the time of writing) you can simply type use followed by a unique string found within only the target exploit.
 
 For example, try this out now with the following command `use icecast`.
+
+![useicecast]({{ page.useicecast | relative_url }})
 
 What is the full path for our exploit that now appears on the msfconsole prompt? This will include the exploit section at the start
 
@@ -244,13 +274,17 @@ What is the full path for our exploit that now appears on the msfconsole prompt?
 
 While that use command with the unique string can be incredibly useful that's not quite the exploit we want here. Let's now run the command search multi/handler.
 
-- `multi/handler`
+- `search multi/handler`
+
+![searchmulti/handler]({{ page.searchmulti/handler | relative_url }})
 
 Go ahead and run the command use NUMBER_NEXT_TO exploit/multi/handler wherein the number will be what appears in that far left column (typically this will be 4 or 5).
 
 In this way, we can use our search results without typing out the full name/path of the module we want to use.
 
 - `use 5`
+
+![use5]({{ page.use5 | relative_url }})
 
 Now type the command use NUMBER_FROM_PREVIOUS_QUESTION. This is the short way to use modules returned by search results.
 
@@ -262,15 +296,21 @@ You might have to check your IP using the command ip addr, it will likely be you
 
 - `show options`
 
+![showoptions]({{ page.showoptions | relative_url }})
+
 use show options commandLet's go ahead and return to our previous exploit, run the command use icecast to select it again.
 
 One last step before we can run our exploit. Run the command set RHOSTS 10.10.199.128 to tell Metasploit which target to attack.
 
 - `set RHOST`
 
+![setRHOST]({{ page.setRHOST | relative_url }})
+
 always show options to see if all requirement are metOnce you're set those variables correctly, run the exploit now via either the command exploit or the command run -j to run this as a job.
 
-- `exploit`
+- `run -j`
+
+![exploit]({{ page.exploit | relative_url }})
 
 Once we've started this, we can check all of the jobs running on the system by running the command jobs
 
@@ -279,6 +319,8 @@ After we've established our connection in the next task, we can list all of our 
 Similarly, we can interact with a target session using the command sessions -i SESSION_NUMBER
 
 - `sessions`
+
+![session-i1]({{ page.session-i1 | relative_url }})
 
 ## Task 6 Were In, Now What?
 
@@ -292,6 +334,8 @@ First, let's list the processes using the command ps. What's the name of the spo
 
 - `ps`
 
+![spoof]({{ page.spoof | relative_url }})
+
 Let's go ahead and move into the spool process or at least attempt to! What command do we use to transfer ourselves into the process? This won't work at the current time as we don't have sufficient privileges but we can still try!
 
 - `migrate`
@@ -302,9 +346,13 @@ What command can we run to find out more information regarding the current user 
 
 - `getuid`
 
+![getuid]({{ page.getuid | relative_url }})
+
 How about finding more information out about the system itself?
 
 - `sysinfo`
+
+![sysinfo]({{ page.sysinfo | relative_url }})
 
 This might take a little bit of googling, what do we run to load mimikatz (more specifically the new version of mimikatz) so we can use it?
 
@@ -313,6 +361,8 @@ This might take a little bit of googling, what do we run to load mimikatz (more 
 Let's go ahead and figure out the privileges of our current user, what command do we run?
 
 - `getprivs`
+
+![getprivs]({{ page.getprivs | relative_url }})
 
 What command do we run to transfer files to our victim computer?
 
@@ -332,6 +382,8 @@ This will determine if we're in a VM, a very useful piece of knowledge for furth
 
 - `post/windows/gather/checkvmNext`
 
+![postwindowsgathercheckvm]({{ page.postwindowsgathercheckvm | relative_url }})
+
 let's try: run post/multi/recon/local_exploit_suggester. This will check for various exploits which we can run within our session to elevate our privileges.
 
 Feel free to experiment using these suggestions, however, we'll be going through this in greater detail in the room Ice.
@@ -345,6 +397,8 @@ This won't work since we aren't administrators, however, this is a fun command t
 One quick extra question, what command can we run in our meterpreter session to spawn a normal system shell?
 
 - `shell`
+
+![shell]({{ page.shell | relative_url }})
 
 ## Task 7 Making Cisco Proud
 
