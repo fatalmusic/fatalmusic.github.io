@@ -4,8 +4,8 @@ date: 2019-04-18T15:34:30-04:00
 categories:
   - Blog
 tags:
-  - cybersecurity
-  - writeup
+  - Cybersecurity
+  - Writeup
 
 metasploit: assets/images/metasploit/msf.jpg
 rapid7: assets/images/metasploit/rapid7.png
