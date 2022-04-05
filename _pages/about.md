@@ -5,9 +5,9 @@ title: "About"
 
 Hi, I’m @fatalmusic
 
-🏫 Computer Science student @Unesa
+🏫 Computer Science student
 
-🔎 Main interests in AI & Cybersec
+🔎 Main interests in Cyber Security
 
 🌱 Learning about Cyber Security and Networking at the moment
 
