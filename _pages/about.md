@@ -5,7 +5,7 @@ title: "About"
 
 Hi, I’m @fatalmusic
 
-🏫 Computer Science student
+🏫 Computer Science
 
 🔎 Main interests in Cyber Security
 

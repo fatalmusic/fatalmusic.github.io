@@ -60,7 +60,7 @@ plugins:
 author:
   name: "Steve"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "My personal website where i post my project and sometimes write up."
+  bio: "My personal website where i post my project and whatever interest me."
   links:
     #- label: "Website"
     #icon: "fas fa-fw fa-link"
